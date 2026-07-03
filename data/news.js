@@ -12,6 +12,7 @@ window.NEWS = [
         { k:"p", v:"Fundraising and progress update on 2/3/2020." },
         { k:"h", v:"Fundraising Update" },
         { k:"p", v:"Many thanks to all the generous donors supporting the coronavirus epidemic area. As of February 2 (the 5th day of the fundraising), Wuhan United has raised a total of $240,273. These funds are expected to be transferred within a month from various fundraising platforms to the Wuhan University Overseas Alumni Science Foundation and the HUST Silicon Valley Fund over time." },
+        { k:"img", v:"../assets/fundraise-chart.png" },
         { k:"p", v:"After the funds are received, we will use part of the fund to fulfill our donation pledge to the NGOs we are partnering with, and strengthen our collaboration to support their contribution to the epidemic area. The situation in the area is changing every day, and our work will be adjusted accordingly. We will do our best to help. Please be assured that all funds raised will be used to support the affected areas. Thanks for your support!" },
         { k:"h", v:"Progress Update" },
         { k:"p", v:"Since the founding of the Wuhan United Executive Team on January 23, 2020, it set an urgent goal: source the medical supplies urgently needed, and deliver these supplies directly to the front-line hospitals in Wuhan and its nearby regions." },
@@ -43,7 +44,8 @@ window.NEWS = [
       title: "Wuhan United 募捐情况和工作更新",
       blocks: [
         { k:"h", v:"募捐信息公示" },
-        { k:"p", v:"非常感谢热心支援新冠疫区的各位捐赠人。截止美国西部时间 2 月 2 日（募款第 5 天）0 时，Wuhan United 筹集到的资金总额为 $240,273。这些资金预计将陆续在一个月内，从各个捐助平台转入为 Wuhan United 募捐的武汉大学海外校友科学基金会和华科硅谷基金会。" },
+        { k:"p", v:"非常感谢热心支援新冠疫区的各位捐赠人。截止美国西部时间 2 月 2 日（募款第 5 天）0 时，Wuhan United 筹集到的资金总额为 $240,273。这些资金预计将陆续在一个月内，从各个捐助平台转入为 Wuhan United 募捐的武汉大学海外校友科学基金会和华科硅谷基金会。各主要平台具体捐赠情况如下：" },
+        { k:"img", v:"../assets/fundraise-chart.png" },
         { k:"p", v:"募集的资金到账后，一部分将直接捐献给我们的合作伙伴 Direct Relief 和 MAP International，用于兑现向他们的捐款承诺，支持他们对疫区的贡献。疫区的情况每天都在变，我们的工作也会根据情况进行调整，一定尽我们所能为疫区做更多的事情。我们重申，所有募集到的资金都将用于支援疫区。谢谢大家的支持！" },
         { k:"h", v:"工作情况更新" },
         { k:"p", v:"Wuhan United 执委会自 2020 年 1 月 23 日成立以来，就设立了一个急迫的目标：迅速筹集国内医院急需的医用物资，并将物资运送到疫区一线医院。执委会组建了专业人士团队，寻找大批量急需的医用物资，如 N95 口罩、防护服等，但很快发现市场上极难找到符合标准的可靠现货。" },
@@ -74,13 +76,14 @@ window.NEWS = [
   },
 
   {
-    id: "xiaogan-2-7-tons", date: "2020-02-03", cover: "",
+    id: "xiaogan-2-7-tons", date: "2020-02-03", cover: "../assets/xiaogan-1.jpg",
     en: {
       title: "Wuhan United and Direct Relief Partner Again to Airlift 2.7 Tons of Medical Supplies to Xiaogan, China",
       blocks: [
         { k:"p", v:"February 3, 2020 — the 2nd shipment from Direct Relief was delivered to Xiaogan Central Hospital, with the aid of Wuhan United. Items include 37,000 masks, 9,000 coveralls and 50,000 gloves." },
         { k:"p", v:"After donating more than 200,000 surgical masks to Wuhan Union Hospital, Direct Relief partnered with Wuhan United again to successfully deliver 20 pallets of urgently needed medical supplies — including 37,000 surgical masks, 9,000 protective suits and 50,000 medical gloves — to Xiaogan Central Hospital. These supplies will help medical relief efforts to fight the coronavirus in the city of Xiaogan." },
         { k:"p", v:"Xiaogan, located in the northeast of Hubei province, lies only 60 kilometers northwest of Wuhan. There have been 918 confirmed cases of the new coronavirus in Xiaogan — the third-most confirmed cases behind Wuhan and Huanggang. As a 3A hospital, Xiaogan Central Hospital is one of the designated hospitals for treatment, and issued an announcement accepting social donations on January 26." },
+        { k:"img", v:"../assets/xiaogan-2.jpg" },
         { k:"p", v:"Direct Relief is a humanitarian aid organization active in all 50 states and more than 90 countries, with a mission to improve the health and lives of people affected by poverty or emergencies — without regard to politics, religion, or ability to pay." },
         { k:"p", v:"Wuhan United was founded by the HUST Northern California Alumni Association and the Wuhan University Northern California Alumni Association. It is a group of Chinese Americans in the San Francisco Bay Area, with a mission to support Wuhan's medical staff by delivering medical supplies to the outbreak area, setting up funds for post-crisis care of doctors and nurses in Wuhan, and raising awareness of the crisis. We work with established NGOs like Direct Relief to achieve these goals." }
       ],
@@ -92,6 +95,7 @@ window.NEWS = [
         { k:"p", v:"2020 年 2 月 3 日，在 Wuhan United 的协助下，Direct Relief 的第二批物资送达孝感中心医院，包括 37,000 个口罩、9,000 件防护服和 50,000 双手套。" },
         { k:"p", v:"在向武汉协和医院捐赠超过 20 万个口罩之后，Direct Relief 再次与 Wuhan United 合作，成功将 20 个托盘的急需医疗物资——37,000 个口罩、9,000 件防护服、50,000 双医用手套——送达孝感中心医院，助力孝感抗击疫情。" },
         { k:"p", v:"孝感位于湖北东北部，距武汉西北仅 60 公里。当时孝感已有 918 例新冠确诊病例，是仅次于武汉、黄冈的第三高。作为一家三甲医院，孝感中心医院是定点收治医院之一，并于 1 月 26 日发布公告接受社会捐赠。" },
+        { k:"img", v:"../assets/xiaogan-2.jpg" },
         { k:"p", v:"Direct Relief 是一家人道主义援助机构，业务遍及全美 50 个州和 90 多个国家，使命是改善受贫困或紧急事件影响者的健康与生活，不分政治、宗教或支付能力。" },
         { k:"p", v:"Wuhan United 由华科北加州校友会与武汉大学北加州校友会共同发起，是一群旧金山湾区的华人，致力于为武汉医护运送物资、为一线医护设立危机后关怀基金，并提升社会对这场危机的关注。我们与 Direct Relief 等成熟 NGO 合作达成这些目标。" }
       ],
@@ -100,12 +104,13 @@ window.NEWS = [
   },
 
   {
-    id: "direct-relief-masks", date: "2020-01-31", cover: "",
+    id: "direct-relief-masks", date: "2020-01-31", cover: "../assets/dr-masks-1.jpg",
     en: {
       title: "Direct Relief Works with Wuhan United to Rush Facial Masks to China",
       blocks: [
         { k:"p", v:"San Francisco Bay Area Chinese professionals help NGOs reach Chinese hospitals directly to fight coronavirus." },
         { k:"p", v:"Through the joint efforts of Direct Relief and Wuhan United, more than 2.5 tons of urgently needed medical supplies — including 200,000 surgical masks and gowns — have been delivered to Wuhan Union Hospital. These supplies will help medical relief efforts to fight the coronavirus." },
+        { k:"img", v:"../assets/dr-masks-2.jpg" },
         { k:"p", v:"Wuhan United is a group of Chinese Americans in the San Francisco Bay Area, founded by the HUST Northern California Alumni Association and the Wuhan University Northern California Alumni Association. Since 1948, Direct Relief has provided targeted medical assistance to help communities recover from disaster and improve lives. The two worked together to ensure donations were shipped directly to hospitals in China." },
         { k:"p", v:"“Our extensive alumni network in China enables us to clear customs in other cities and transport supplies to Wuhan,” said Tom Gong of Wuhan United. “The top four hospitals in Wuhan are affiliated with Wuhan University and HUST. We have a large team on the ground in Wuhan — a region difficult to reach since January 23 due to quarantines — that can help put the donated supplies to the best use.”" },
         { k:"p", v:"“Direct Relief is keenly sensitive to the need to respond fast and in close coordination with public health officials in circumstances such as the unfolding coronavirus situation,” said Direct Relief CEO Thomas Tighe. “We’re deeply thankful for Wuhan United and others working to coordinate such a quick response to very specific requests from Chinese health officials.”" },
@@ -119,6 +124,7 @@ window.NEWS = [
       blocks: [
         { k:"p", v:"旧金山湾区的华人专业人士帮助 NGO 直达中国医院，共同抗击疫情。" },
         { k:"p", v:"通过 Direct Relief 与 Wuhan United 的共同努力，超过 2.5 吨急需医疗物资——包括 20 万个外科口罩与防护服——已送达武汉协和医院，助力抗击新冠疫情。" },
+        { k:"img", v:"../assets/dr-masks-2.jpg" },
         { k:"p", v:"Wuhan United 是一群旧金山湾区的华人，由华科北加州校友会与武汉大学北加州校友会共同发起。Direct Relief 自 1948 年起为社区提供有针对性的医疗援助，帮助其从灾难中恢复。双方合作，确保捐赠物资直接运抵中国的医院。" },
         { k:"p", v:"「我们在中国庞大的校友网络，让我们能够在其他城市清关并将物资运往武汉，」Wuhan United 的 Tom Gong 表示。「武汉排名前四的医院都隶属于武汉大学和华中科技大学。我们在武汉有一支庞大的地面团队——自 1 月 23 日封城以来，这一地区极难进入——能够让捐赠物资发挥最大作用。」" },
         { k:"p", v:"「在新冠这样不断变化的情况下，Direct Relief 高度重视与公共卫生官员密切协调、快速响应，」Direct Relief 首席执行官 Thomas Tighe 表示。「我们非常感谢 Wuhan United 等各方，协调如此迅速地回应中国卫生部门的具体需求。」" },
@@ -130,7 +136,7 @@ window.NEWS = [
   },
 
   {
-    id: "map-international", date: "2020-01-30", cover: "",
+    id: "map-international", date: "2020-01-30", cover: "../assets/map-1.jpg",
     en: {
       title: "Wuhan United Partnered with MAP International to Airlift 120 Pallets of Surgical Masks and Protective Gear to Wuhan",
       blocks: [
