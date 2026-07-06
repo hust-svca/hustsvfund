@@ -30,6 +30,8 @@
     }
   }[lang];
   const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  /* 只放行 http(s) 外链和本站 assets 相对路径，其余一律置空，防止 javascript: 等注入 */
+  const safeUrl = u => { u=String(u||""); return (/^https?:\/\//i.test(u) || /^(\.\.\/)?assets\/[\w.-]+$/.test(u)) ? esc(u) : "#"; };
 
   /* ---- 导航 ---- */
   const header = document.getElementById("nav");
@@ -87,7 +89,7 @@
     listBox.innerHTML = NEWS.map(n=>{
       const a = n[lang];
       const excerpt = (a.blocks.find(b=>b.k==="p")||{}).v || "";
-      return `<a class="entry" href="article.html?id=${n.id}">
+      return `<a class="entry" href="article.html?id=${encodeURIComponent(n.id)}">
         <div class="d">${n.date}</div>
         <div><div class="tt">${esc(a.title)}</div><div class="ex">${esc(excerpt.slice(0,90))}${excerpt.length>90?"…":""}</div></div>
         <div class="tag mono">${T.tag}</div>
@@ -108,17 +110,17 @@
         if(b.k==="h")  return `<h2 class="art-h">${esc(b.v)}</h2>`;
         if(b.k==="q")  return `<p class="art-q">${esc(b.v)}</p>`;
         if(b.k==="ul") return `<ul class="art-ul">${b.v.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
-        if(b.k==="img")return `<img loading="lazy" src="${b.v}" alt="">`;
+        if(b.k==="img")return `<img loading="lazy" src="${safeUrl(b.v)}" alt="">`;
         return `<p>${esc(b.v)}</p>`;
       }).join("");
       const links = (a.links && a.links.length)
-        ? `<div class="art-links"><span class="mono">${T.related}</span>${a.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener">${esc(l.t)} ↗</a>`).join("")}</div>` : "";
+        ? `<div class="art-links"><span class="mono">${T.related}</span>${a.links.map(l=>`<a href="${safeUrl(l.u)}" target="_blank" rel="noopener">${esc(l.t)} ↗</a>`).join("")}</div>` : "";
       artBox.innerHTML = `
         <a class="back mono" href="news.html">${T.newsBack}</a>
         <div class="art-cat mono">[${T.tag}]</div>
         <h1>${esc(a.title)}</h1>
         <div class="art-date mono">${n.date} · ${T.source}</div>
-        ${n.cover?`<img class="art-cover" src="${n.cover}" alt="">`:""}
+        ${n.cover?`<img class="art-cover" src="${safeUrl(n.cover)}" alt="">`:""}
         <div class="art-body">${body}</div>
         ${links}
         <a class="back mono" href="news.html">${T.newsBack}</a>`;

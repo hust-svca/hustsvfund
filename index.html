@@ -3,13 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>HUST Silicon Valley Fund</title>
-<script>
-  // send visitors to their language; default English
-  var zh = (navigator.language || "").toLowerCase().indexOf("zh") === 0;
-  location.replace(zh ? "zh/index.html" : "en/index.html");
-</script>
-<meta http-equiv="refresh" content="0; url=en/index.html">
+<script src="redirect.js"></script>
+<meta http-equiv="refresh" content="1; url=en/index.html">
 </head>
 <body>
 <p><a href="en/index.html">Enter site</a> · <a href="zh/index.html">进入中文站</a></p>
